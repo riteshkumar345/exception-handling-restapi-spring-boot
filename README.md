@@ -23,7 +23,7 @@
 
 # Testing API from Browser/Postman
 
-1. Request : http://localhost:8080/status                     [GET] : No Body
+# 1. Request : http://localhost:8080/status                     [GET] : No Body
 
    Response from Global Exception handler class i.e. AppExceptionHandler.java
 
@@ -41,12 +41,12 @@
     		"code": "ABC0004"
 	     }
    Http Status Code : 500 Internal Server Error
-  ---------------------------------------------------
+
   
-2. Valid Request : http://localhost:8080/book/{ISBN001}       [GET] No Body
+# 2. Valid Request : http://localhost:8080/book/{ISBN001}       [GET] No Body
    Respone : 	Book Price is $ 48
 
-3. In-valid Request : http://localhost:8080/book/{ISBN002}    [GET] No Body
+# 3. In-valid Request : http://localhost:8080/book/{ISBN002}    [GET] No Body
 
    Respone : {
     		"msg": "Invalid ISBN",
