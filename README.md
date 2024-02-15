@@ -32,7 +32,7 @@
     		"code": "PRE.DEFINED.EXCEP.CODE.0001"
 	     }
    Http Status Code : 500 Internal Server Error
-    --------------- OR ------------------
+   <HR>
    If you un-comment Controller Based Exception Handling method i.e. handleAE(-)#ControllerBasedExceptionHandling,
    then you get response from particular controller
 
