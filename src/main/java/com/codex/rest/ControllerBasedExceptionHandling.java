@@ -36,8 +36,9 @@ public class ControllerBasedExceptionHandling {
 		return msg;
 	}
 	
-	/**  handle "Predefined Exception" only for this class **/
-	@ExceptionHandler(value = ArithmeticException.class)
+	//  handle "Predefined Exception" only for this class
+	
+	/**@ExceptionHandler(value = ArithmeticException.class)
 	public ResponseEntity<ExceptionInfo> handleAE(ArithmeticException ae) {
 		
 		ExceptionInfo exception = new ExceptionInfo();
@@ -46,5 +47,5 @@ public class ControllerBasedExceptionHandling {
 		
 		return new ResponseEntity<>(exception, HttpStatus.INTERNAL_SERVER_ERROR);
 	}
-
+	**/
 }
