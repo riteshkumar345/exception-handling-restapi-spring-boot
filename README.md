@@ -19,4 +19,4 @@
    # 1) Controller Based Exception Handling 
       - Exception Handlers applicable for only particular controller
    # 2) Global Exception Handling
-			- Exception Handlers applicable for all the classes in the project
+      - Exception Handlers applicable for all the classes in the project
