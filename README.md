@@ -20,3 +20,34 @@
       - Exception Handlers applicable for only particular controller
    # 2) Global Exception Handling
       - Exception Handlers applicable for all the classes in the project
+
+# Testing API from Browser/Postman
+
+1. Request : http://localhost:8080/status                     [GET] : No Body
+
+   Response from Global Exception handler class i.e. AppExceptionHandler.java
+   Respone : {
+    		"msg": "/ by zero",
+    		"code": "PRE.DEFINED.EXCEP.CODE.0001"
+	     }
+   Http Status Code : 500 Internal Server Error
+    --------------- OR ------------------
+   If you un-comment Controller Based Exception Handling method i.e. handleAE(-)#ControllerBasedExceptionHandling,
+   then you get response from particular controller
+
+   Respone : {
+    		"msg": "/ by zero",
+    		"code": "ABC0004"
+	     }
+   Http Status Code : 500 Internal Server Error
+  ---------------------------------------------------
+  
+2. Valid Request : http://localhost:8080/book/{ISBN001}       [GET] No Body
+   Respone : 	Book Price is $ 48
+
+3. In-valid Request : http://localhost:8080/book/{ISBN002}    [GET] No Body
+   Respone : {
+    		"msg": "Invalid ISBN",
+    		"code": "USER.DEFINE.EXCEP.CODE.9999"
+	     }
+   Http Status Code : 400 Bad Request
