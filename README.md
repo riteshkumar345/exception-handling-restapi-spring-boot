@@ -26,6 +26,7 @@
 1. Request : http://localhost:8080/status                     [GET] : No Body
 
    Response from Global Exception handler class i.e. AppExceptionHandler.java
+
    Respone : {
     		"msg": "/ by zero",
     		"code": "PRE.DEFINED.EXCEP.CODE.0001"
@@ -46,6 +47,7 @@
    Respone : 	Book Price is $ 48
 
 3. In-valid Request : http://localhost:8080/book/{ISBN002}    [GET] No Body
+
    Respone : {
     		"msg": "Invalid ISBN",
     		"code": "USER.DEFINE.EXCEP.CODE.9999"
